@@ -1,0 +1,132 @@
+.nuxt-progress {
+	height: 6px !important;
+}
+#m_script_f_id.settper_container {
+	box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+	margin: 20px;
+}
+#m_script_f_id .settper_hdr {
+	text-align: center;
+	margin: 35px 0;
+}
+#m_script_f_id .settper_hdr span {
+	position: absolute;
+	margin-top: -24px;
+	background-color: hsl(19deg 89% 57%);
+	border-radius: 50%;
+	font-weight: bold;
+	color: white;
+	padding: 5px 8px;
+}
+#m_script_f_id .settper_ftr {
+	text-align: center;
+	margin: 35px 0;
+}
+#m_script_f_id label {
+	font-size: 16px;
+	font-weight: bold;
+	color: #201c1c;
+}
+#m_script_f_id  span.sign_requrd {
+	color: #ff6f00;
+}
+#m_script_f_id  span.info_note {
+	float: right;
+	color: hsl(217deg 36% 57%);
+	font-size: 12px;
+}
+#m_script_f_id  textarea {
+	padding: 7px;
+}
+#m_script_f_id  h4.form_title {
+	font-size: 18px;
+	margin-bottom: 7px;
+	font-weight: bold;
+}
+#m_script_f_id  input.form-control.input_type_file {
+	margin-top: 13px;
+	margin-left: 19px;
+	z-index: 0;
+}
+#m_script_f_id  button.wrap_file_btn {
+	z-index: 1;
+	position: absolute;
+	display: block;
+	margin-top: -29px;
+}
+#m_script_f_id  .border_b {
+	border-bottom: 1px solid #ddd;
+}
+#m_script_f_id  .text_center {
+	text-align: center;
+}
+#m_script_f_id  ul#settper_5_ul li {
+	list-style: circle;
+	margin-top: 5px;
+}
+#m_script_f_id  .file_group_btn {
+	padding-bottom: 16px;
+}
+#m_script_f_id  .add_more_btn {
+	text-align: right;
+	float: right;
+	margin-top: -50px;
+}
+#m_script_f_id  .add_more_ftr {
+	text-align: center;
+	float: right;
+	width: 100%;
+}
+#all_keyword_div button span {
+	position: absolute;
+	color: white;
+	background-color: black;
+	border-radius: 50%;
+	margin-top: -12px;
+	margin-left: 16px;
+	font-weight: 900;
+	height: 25px;
+	width: 25px;
+	font-size: 23px;
+	padding: 1px;
+}
+.c_inpt_div input.custom_input {
+    border: 1px solid #c9c1c1;
+    margin-top: 10px;
+    padding-left: 10px;
+    width: 90%;
+}
+.c_inpt_div button {
+    border: none;
+    transition: all 0.2s;
+    background-color: unset;
+    color: #03a9f4;
+    font-weight: bolder;
+    margin-left: -46px;
+    position: absolute;
+    margin-top: 10px;
+    height: 47px;
+    width: 46px;
+}
+.c_inpt_div button:hover {
+	border: 1px solid;
+}
+input.custom_input:focus {
+	border-bottom: 1px solid #c9c1c1 !important;
+	box-shadow: unset !important;
+}
+.f_right {
+	float: right !important;
+}
+.p_0 {
+	padding: 0 !important;
+}
+.text_center {
+	text-align: center;
+}
+.text_right {
+	text-align: right;
+}
+.text_left {
+	text-align: left;
+}
