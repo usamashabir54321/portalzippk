@@ -19,11 +19,6 @@
 							</li>
 							<li class="hide-on-large-only search-input-wrapper"><a class="waves-effect waves-block waves-light search-button" href="javascript:void(0);"><i class="material-icons">search</i></a></li>
 							<li>
-								<a class="waves-effect waves-block waves-light notification-button" @mouseenter="notification_drop = true" @mouseleave="notification_drop = false">
-									<i class="material-icons">notifications_none<small class="notification-badge">5</small></i>
-								</a>
-							</li>
-							<li>
 								<a class="waves-effect waves-block waves-light profile-button" href="javascript:void(0);" @mouseenter="profile_drop = true" @mouseleave="profile_drop = false">
 									<span class="avatar-status avatar-online"><img src="/admin/images/avatar/avatar-7.png" alt="avatar"><i></i></span>
 								</a>
@@ -36,35 +31,8 @@
 							<li class="dropdown-item"><a class="grey-text text-darken-1" href="#!" data-language="pt"><i class="flag-icon flag-icon-pt"></i> Portuguese</a></li>
 							<li class="dropdown-item"><a class="grey-text text-darken-1" href="#!" data-language="de"><i class="flag-icon flag-icon-de"></i> German</a></li>
 						</ul>
-						<!-- notifications-dropdown-->
-						<ul v-show="notification_drop" @mouseenter="notification_drop = true" @mouseleave="notification_drop = false" class="dropdown-content" id="notifications-dropdown" style="display: block;width: 22%;left: 75%;top: 68%;height: 45vh;opacity: 1;">
-							<li>
-								<h6>NOTIFICATIONS<span class="new badge">5</span></h6>
-							</li>
-							<li class="divider"></li>
-							<li><a class="black-text" href="#!"><span class="material-icons icon-bg-circle cyan small">add_shopping_cart</span> A new order has been placed!</a>
-								<time class="media-meta grey-text darken-2" datetime="2015-06-12T20:50:48+08:00">2 hours ago</time>
-							</li>
-							<li><a class="black-text" href="#!"><span class="material-icons icon-bg-circle red small">stars</span> Completed the task</a>
-								<time class="media-meta grey-text darken-2" datetime="2015-06-12T20:50:48+08:00">3 days ago</time>
-							</li>
-							<li><a class="black-text" href="#!"><span class="material-icons icon-bg-circle teal small">settings</span> Settings updated</a>
-								<time class="media-meta grey-text darken-2" datetime="2015-06-12T20:50:48+08:00">4 days ago</time>
-							</li>
-							<li><a class="black-text" href="#!"><span class="material-icons icon-bg-circle deep-orange small">today</span> Director meeting started</a>
-								<time class="media-meta grey-text darken-2" datetime="2015-06-12T20:50:48+08:00">6 days ago</time>
-							</li>
-							<li><a class="black-text" href="#!"><span class="material-icons icon-bg-circle amber small">trending_up</span> Generate monthly report</a>
-								<time class="media-meta grey-text darken-2" datetime="2015-06-12T20:50:48+08:00">1 week ago</time>
-							</li>
-						</ul>
 						<!-- profile-dropdown-->
-						<ul v-show="profile_drop" class="dropdown-content" id="profile-dropdown" @mouseenter="profile_drop = true" @mouseleave="profile_drop = false" style="display: block;width: 10%;left: 90%;top: 74%;height: 26.8vh;opacity: 1;">
-							<li><a class="grey-text text-darken-1" href="user-profile-page.html"><i class="material-icons">person_outline</i> Profile</a></li>
-							<li><a class="grey-text text-darken-1" href="app-chat.html"><i class="material-icons">chat_bubble_outline</i> Chat</a></li>
-							<li><a class="grey-text text-darken-1" href="page-faq.html"><i class="material-icons">help_outline</i> Help</a></li>
-							<li class="divider"></li>
-							<li><a class="grey-text text-darken-1" href="user-lock-screen.html"><i class="material-icons">lock_outline</i> Lock</a></li>
+						<ul v-show="profile_drop" class="dropdown-content" id="profile-dropdown" @mouseenter="profile_drop = true" @mouseleave="profile_drop = false" style="display: block;width: 10%;left: 90%;top: 74%;height: 5.4vh;opacity: 1;">
 							<li><a class="grey-text text-darken-1" @click="logout"><i class="material-icons">keyboard_tab</i> Logout</a></li>
 						</ul>
 					</div>
@@ -87,7 +55,6 @@
 						<img class="show-on-medium-and-down hide-on-med-and-up" src="/admin/images/logo/materialize-logo-color.png" alt="materialize logo">
 						<span class="logo-text hide-on-med-and-down">Usama Shabir</span>
 					</a>
-					<a class="navbar-toggler" href="#"><i class="material-icons">radio_button_checked</i></a>
 				</h1>
 			</div>
 			<!-- SIDE BAR LINKS -->
@@ -103,6 +70,31 @@
 				<li class="bold">
 					<nuxt-link :to="{ name : 'dashboard' }" class="waves-effect waves-cyan">
 						<i class="material-icons">radio_button_unchecked</i><span class="menu-title">Dashbord</span>
+					</nuxt-link>
+				</li>
+				<li class="bold">
+					<nuxt-link :to="{ name : 'categories' }" class="waves-effect waves-cyan">
+						<i class="material-icons">radio_button_unchecked</i><span class="menu-title">Categories</span>
+					</nuxt-link>
+				</li>
+				<li class="bold">
+					<nuxt-link :to="{ name : 'addproduct' }" class="waves-effect waves-cyan">
+						<i class="material-icons">radio_button_unchecked</i><span class="menu-title">Add Product</span>
+					</nuxt-link>
+				</li>
+				<li class="bold">
+					<nuxt-link :to="{ name : 'movies' }" class="waves-effect waves-cyan">
+						<i class="material-icons">radio_button_unchecked</i><span class="menu-title">Movies</span>
+					</nuxt-link>
+				</li>
+				<li class="bold">
+					<nuxt-link :to="{ name : 'anime' }" class="waves-effect waves-cyan">
+						<i class="material-icons">radio_button_unchecked</i><span class="menu-title">Anime</span>
+					</nuxt-link>
+				</li>
+				<li class="bold">
+					<nuxt-link :to="{ name : 'seasons' }" class="waves-effect waves-cyan">
+						<i class="material-icons">radio_button_unchecked</i><span class="menu-title">Seasons</span>
 					</nuxt-link>
 				</li>
 			</ul>
@@ -212,13 +204,12 @@
 				selctNavClrOpt: null,
 				selctMenClrOpt: null,
 				selctMenBgClrOpt: null,
-				notification_drop: false,
 				profile_drop: false,
 			}
 		},
   		methods: {
   			logout () {
-				this.$router.push({name : 'login'});
+				this.$router.push({name : 'index'});
 				this.$cookies.removeAll();
   			},
   			doFullScreen () {

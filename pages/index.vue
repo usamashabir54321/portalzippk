@@ -20,20 +20,20 @@
 				loginObj: {},
 			}
 		},
-		// methods : {
-		// 	async loginMe() {
-		// 		await this.$axios.post('/api/user/login', this.loginObj).then(res => {
-		// 			if (res.data.status == false) {
-		// 				this.swalfire('error',res.data.message);
-		// 			} else {
-		// 				this.swalfire('success',res.data.message);
-		// 				this.$cookies.set('admin_token', res.data.access_token);
-		// 				setTimeout(() => { this.$router.push({name : 'dashboard'}); },300);
-		// 			}
-		// 			this.loginObj = {};
-		// 		});
-		// 	},
-		// },
+		methods : {
+			async loginMe() {
+				await this.$axios.post('/api/user/login', this.loginObj).then(res => {
+					if (res.data.status == false) {
+						this.sweatAlert('error',res.data.message);
+					} else {
+						this.sweatAlert('success',res.data.message);
+						this.$cookies.set('admin_token', res.data.access_token);
+						setTimeout(() => { this.$router.push({name : 'dashboard'}); },300);
+					}
+					this.loginObj = {};
+				});
+			},
+		},
 	}
 </script>
 
